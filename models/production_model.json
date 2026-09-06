@@ -1,0 +1,69 @@
+{
+  "family": "xgb",
+  "trained_at": "2026-09-06T14:17:29+00:00",
+  "features": [
+    "amount",
+    "log_amount",
+    "cust_prev_mean_amount",
+    "cust_prev_std_amount",
+    "cust_prev_max_amount",
+    "amount_over_cust_mean",
+    "amount_z_cust",
+    "amount_over_cust_max",
+    "cust_steps_since_last",
+    "cust_n_last_7",
+    "cust_n_last_24",
+    "cust_amount_last_7",
+    "cust_cat_prev_share",
+    "cust_merch_prev_share",
+    "cust_first_time_category",
+    "cust_first_time_merchant",
+    "cust_is_new",
+    "merch_share_last_24",
+    "merch_mean_amount_last_24",
+    "amount_over_merch_mean",
+    "cat_mean_amount_last_24",
+    "amount_over_cat_mean",
+    "category",
+    "merchant"
+  ],
+  "threshold": 0.16,
+  "threshold_capacity": 0.08,
+  "libraries": {
+    "python": "3.12.11",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "pandas": "3.0.5",
+    "numpy": "2.5.2"
+  },
+  "training_rows": 461412,
+  "training_steps": [
+    0,
+    143
+  ],
+  "holdout_steps": [
+    144,
+    179
+  ],
+  "params": {
+    "learning_rate": 0.1136982082972765,
+    "subsample": 0.5446029280048308,
+    "colsample_bytree": 0.8635710001793575,
+    "reg_lambda": 26.945715382533802,
+    "reg_alpha": 0.045878767113464586,
+    "scale_pos_weight": 1.824783359689335,
+    "max_depth": 7,
+    "min_child_weight": 1.0515089344952284,
+    "gamma": 4.851899024509025,
+    "n_estimators": 900
+  },
+  "holdout_metrics": {
+    "roc_auc": 0.999302330752648,
+    "average_precision": 0.9592444556683883,
+    "precision": 0.7511086474501109,
+    "recall": 0.9409722222222222,
+    "alert_rate": 0.013540392251052682,
+    "value_recall": 0.9914140327739934
+  }
+}
