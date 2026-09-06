@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+*.log
+*.db
+
+# Local only
+docs/brief/
+deliverables/
+tooling/
+reports/smoke/
+scored.csv
+models/*.joblib
+!models/production_model.joblib
